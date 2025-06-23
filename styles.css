@@ -1,0 +1,48 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+      border: 1px solid #000000;
+      padding: 5px;
+    }
+
+th:first-child {
+  font-weight: bold;
+  background-color: #ffffff; /* Default white */
+}
+
+/* Alternate blue for even rows in first column */
+tr:nth-child(even) th:first-child {
+  background-color: #93beff; /* Light blue */
+}
+
+  /* target every article except proj4 and proj5 */
+.grid group article:not(#proj4):not(#proj5) {
+  position: relative;
+  overflow: hidden;
+}
+
+/* gray overlay */
+.grid group article:not(#proj4):not(#proj5)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(128, 128, 128, 0.5);
+  pointer-events: none;
+}
+
+/* watermark text */
+.grid group article:not(#proj4):not(#proj5)::after {
+  content: "IN PROGRESS";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+  pointer-events: none;
+}
