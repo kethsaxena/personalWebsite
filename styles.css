@@ -46,3 +46,20 @@ tr:nth-child(even) th:first-child {
   white-space: nowrap;
   pointer-events: none;
 }
+
+#payme {
+  
+   display: inline-block;
+   background-color: #000000;
+   color: white;
+   padding: 18px 5px;
+   text-align: center;
+   text-decoration: none;
+   font-size: 20px;
+   border-radius: 5px;
+   font-family: sans-serif;
+}
+
+#payme:hover {
+  background-color: orange;
+}
