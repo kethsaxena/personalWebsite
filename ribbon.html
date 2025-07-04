@@ -1,0 +1,244 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indian Army Ribbon</title>
+  <style>
+    .ribbon {
+      width: 200px;
+      height: 30px;
+      display: flex;
+      border: 2px solid #333;
+    }
+
+    .stripe {
+      flex: 1;
+    }
+
+    .saffron {
+      background-color: #FF9933;
+    }
+
+    .white {
+      background-color: #FFFFFF;
+    }
+
+    .green {
+      background-color: #138808;
+    }
+  </style>
+</head>
+<body>
+  <div class="ribbon">
+    <div class="stripe saffron"></div>
+    <div class="stripe white"></div>
+    <div class="stripe green"></div>
+  </div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indian Army Ribbon with CSS Sword</title>
+  <style>
+    body {
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .ribbon-container {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .ribbon {
+      width: 200px;
+      height: 30px;
+      display: flex;
+      border: 2px solid #333;
+      overflow: hidden;
+    }
+
+    .stripe {
+      flex: 1;
+    }
+
+    .saffron {
+      background-color: #FF9933;
+    }
+
+    .white {
+      background-color: #FFFFFF;
+    }
+
+    .green {
+      background-color: #138808;
+    }
+
+    /* Sword container */
+    .sword {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) translateY(20px);
+      opacity: 0;
+      transition: all 0.5s ease;
+      width: 20px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      pointer-events: none;
+    }
+
+    /* Blade */
+    .blade {
+      width: 4px;
+      height: 60px;
+      background: linear-gradient(to top, #999, #eee);
+    }
+
+    /* Guard */
+    .guard {
+      width: 30px;
+      height: 4px;
+      background: gold;
+      margin: 2px 0;
+      border-radius: 2px;
+    }
+
+    /* Handle */
+    .handle {
+      width: 6px;
+      height: 25px;
+      background: #654321;
+      border-radius: 2px;
+      margin-top: 2px;
+    }
+
+    /* Pommel */
+    .pommel {
+      width: 10px;
+      height: 10px;
+      background: #444;
+      border-radius: 50%;
+      margin-top: 2px;
+    }
+
+    .ribbon-container:hover .sword {
+      opacity: 1;
+      transform: translate(-50%, -50%) translateY(-50px);
+    }
+  </style>
+</head>
+<body>
+  <div class="ribbon-container">
+    <div class="ribbon">
+      <div class="stripe saffron"></div>
+      <div class="stripe white"></div>
+      <div class="stripe green"></div>
+    </div>
+
+    Sword made with div -->
+    <!-- <div class="sword">
+      <div class="blade"></div>
+      <div class="guard"></div>
+      <div class="handle"></div>
+      <div class="pommel"></div>
+    </div>
+  </div>
+</body>
+</html>  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pure CSS Sword</title>
+  <style>
+    body {
+      background: #f0f0f0;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sword {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: all 0.4s ease;
+      transform: rotate(180deg);
+    }
+
+    .blade {
+      width: 4px;
+      height: 60px;
+      background: linear-gradient(to top, #999, #eee);
+      border-radius: 2px;
+    }
+
+    .guard {
+      width: 30px;
+      height: 4px;
+      background: gold;
+      margin: 2px 0;
+      border-radius: 2px;
+    }
+
+    .handle {
+      width: 6px;
+      height: 25px;
+      background: #654321;
+      border-radius: 2px;
+      margin-top: 2px;
+    }
+
+    .pommel {
+      width: 10px;
+      height: 10px;
+      background: #444;
+      border-radius: 50%;
+      margin-top: 2px;
+    }
+
+    .sword:hover {
+      transform: rotate(180deg) scale(1.5);
+      filter: brightness(1.2) contrast(1.2);
+    }
+
+    /* Optional: on hover, make colors bolder */
+    .sword:hover .blade {
+      background: linear-gradient(to top, #666, #ccc);
+    }
+
+    .sword:hover .guard {
+      background: darkgoldenrod;
+    }
+
+    .sword:hover .handle {
+      background: #3e220d;
+    }
+
+    .sword:hover .pommel {
+      background: #222;
+    }
+  </style>
+</head>
+<body>
+  <div class="sword">
+    <div class="blade"></div>
+    <div class="guard"></div>
+    <div class="handle"></div>
+    <div class="pommel"></div>
+  </div>
+</body>
+</html>
